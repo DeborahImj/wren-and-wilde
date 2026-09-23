@@ -160,18 +160,34 @@ a {
   display: none;
   flex-direction: column;
   gap: 0.75rem;
+  height: 2rem;
   justify-content: center;
 }
 
 .nav-burger span {
   background: var(--color-pink);
   height: 0.15rem;
-  width: 3.25rem;
+  transition: transform 0.4s ease-in-out;
+  transform-origin: center;
+  width: 2.75rem;
+}
+
+.nav-burger.active .top {
+  transform: translateY(0.45rem) rotate(45deg);
+}
+
+.nav-burger.active .bottom {
+  transform: translateY(-0.45rem) rotate(-45deg);
 }
 
 @media screen and (max-width: 800px) {
+  .navbar {
+    border-bottom: 0.1rem solid var(--color-black);
+    padding: 0 1.5rem;
+  }
   .nav-logo {
     border: none;
+    padding: 1.25rem 0;
   }
   .nav-links, .nav-socials, .nav-cta {
     display: none;
