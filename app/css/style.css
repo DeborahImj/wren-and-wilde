@@ -21,21 +21,21 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
+:root {
+  --color-beige: #F7EDE3;
+  --color-black: #000;
+  --color-pink: #F2BCC9;
+}
 
+body {
+  background: 
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
-footer {
-
-}
+.navbar {}
 
 /******************************************
 /* ADDITIONAL STYLES
