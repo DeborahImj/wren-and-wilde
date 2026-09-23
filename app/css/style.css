@@ -58,6 +58,7 @@ body {
   background: var(--color-beige);
   color: var(--color-black);
   font-family: 'Cartograph CF', monospace;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -80,7 +81,12 @@ a {
   border-bottom: 0.125rem solid var(--color-black);
   display: flex;
   justify-content: space-between;
+  left: 0;
   padding: 0 2.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .nav-left {
@@ -147,6 +153,32 @@ a {
 
 .nav-cta:hover {
   background: var(--color-light-green);
+}
+
+.nav-burger {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.nav-burger span {
+  background: var(--color-pink);
+  height: 0.15rem;
+  width: 3.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-logo {
+    border: none;
+  }
+  .nav-links, .nav-socials, .nav-cta {
+    display: none;
+  }
+  .nav-burger {
+    display: flex;
+  }
 }
 
 /******************************************
