@@ -78,6 +78,7 @@ a {
 /*******************************************/
 .navbar {
   align-items: stretch;
+  background: var(--color-beige);
   border-bottom: 0.125rem solid var(--color-black);
   display: flex;
   justify-content: space-between;
@@ -180,6 +181,25 @@ a {
   transform: translateY(-0.45rem) rotate(-45deg);
 }
 
+.nav-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: -100vh;
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+  z-index: 998;
+}
+
+.nav-menu.active {
+  top: 0;
+}
+
 @media screen and (max-width: 800px) {
   .navbar {
     border-bottom: 0.1rem solid var(--color-black);
@@ -192,8 +212,25 @@ a {
   .nav-links, .nav-socials, .nav-cta {
     display: none;
   }
+  .nav-menu .nav-links, .nav-menu .nav-socials, .nav-menu .nav-cta {
+    display: flex;
+  }
   .nav-burger {
     display: flex;
+  }
+  .nav-menu .nav-links {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .nav-menu .nav-socials {
+    justify-content: center;
+  }
+  .nav-menu .nav-cta {
+    align-items: center;
+    justify-content: center;
   }
 }
 
