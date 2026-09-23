@@ -185,8 +185,8 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
-  justify-content: center;
+  gap: 9rem;
+  justify-content: flex-end;
   height: 100vh;
   left: 0;
   position: fixed;
@@ -212,7 +212,7 @@ a {
   .nav-links, .nav-socials, .nav-cta {
     display: none;
   }
-  .nav-menu .nav-links, .nav-menu .nav-socials, .nav-menu .nav-cta {
+  .nav-menu .nav-links, .nav-menu .nav-socials {
     display: flex;
   }
   .nav-burger {
@@ -221,16 +221,18 @@ a {
   .nav-menu .nav-links {
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.75rem;
     justify-content: flex-end;
     padding: 0;
   }
   .nav-menu .nav-socials {
     justify-content: center;
+    margin: 0 0 2rem 0;
   }
   .nav-menu .nav-cta {
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    margin: 0 auto 6rem auto;
+    padding: 0.55rem 3.75rem;
   }
 }
 

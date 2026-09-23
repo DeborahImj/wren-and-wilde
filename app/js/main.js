@@ -10,3 +10,12 @@ function toggleNavMenu() {
   navBurger.classList.toggle('active');
   navMenu.classList.toggle('active');
 }
+
+const mobileNavLinks = document.querySelectorAll('.nav-link');
+
+Array.from(mobileNavLinks).forEach(element => element.addEventListener('click', scrollToSection));
+
+function scrollToSection() {
+  navBurger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+}
