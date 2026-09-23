@@ -21,6 +21,30 @@
 /* BASE STYLES
 /*******************************************/
 
+@font-face {
+  font-family: 'Buttergone';
+  src: url('../assets/fonts/buttergone-brush.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cartograph CF';
+  src: url('../assets/fonts/CartographCF-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Olivia Nineties';
+  src: url('../assets/fonts/tbj-olivia-nineties-demo.reg.woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-beige: #F7EDE3;
   --color-black: #000;
@@ -33,6 +57,7 @@
 body {
   background: var(--color-beige);
   color: var(--color-black);
+  font-family: 'Cartograph CF', monospace;
 }
 
 img {
@@ -53,12 +78,32 @@ a {
   border-bottom: 0.125rem solid var(--color-black);
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .nav-left {
   align-items: center;
   display: flex;
+}
+
+.nav-logo {
+  align-items: stretch;
+  border-right: 0.05rem solid var(--color-black);
+  display: flex;
+  font-size: 3rem;
+  height: 100%;
+}
+
+.nav-left span {
+  font-size: 2rem;
+}
+
+.script-font {
+  font-family: 'Buttergone', sans-serif;
+}
+
+.serif-font {
+  font-family: 'Olivia Nineties', serif;
 }
 
 /******************************************
