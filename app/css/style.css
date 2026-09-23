@@ -24,18 +24,42 @@
 :root {
   --color-beige: #F7EDE3;
   --color-black: #000;
+  --color-dark-green: #4A5E53;
+  --color-light-green: #ABB18F;
   --color-pink: #F2BCC9;
+  --color-white: #FFF;
 }
 
 body {
-  background: 
+  background: var(--color-beige);
+  color: var(--color-black);
+}
+
+img {
+  width: 4rem;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-.navbar {}
+.navbar {
+  align-items: center;
+  border-bottom: 0.125rem solid var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-left {
+  align-items: center;
+  display: flex;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
