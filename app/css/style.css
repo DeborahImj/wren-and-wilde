@@ -309,12 +309,19 @@ a {
 }
 
 .section-cta {
-  background: var(--color-pink);
   border: 0.075rem solid var(--color-black);
   display: inline-block;
   margin: 1.5rem 0 0 0;
   padding: 0.7rem 3.5rem;
+}
+
+.home-section .section-cta {
+  background: var(--color-pink);
   transition: all 0.4s ease-in-out;
+}
+
+.home-section .section-cta:hover {
+  background: var(--color-light-green);
 }
 
 @media screen and (max-width: 800px) {
@@ -327,6 +334,15 @@ a {
   .home-bottom-content {
     padding: 2.5rem 1.5rem 2rem 1.5rem;
     width: 100%;
+  }
+  .heading-2 {
+    font-size: 2.15rem;
+  }
+  .section-paragraph {
+    font-size: 1rem;
+  }
+  .green-span {
+    font-size: 0.8rem;
   }
 }
 
