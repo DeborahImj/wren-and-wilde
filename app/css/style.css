@@ -355,7 +355,12 @@ a {
   border-bottom: 0.125rem solid var(--color-black);
   display: flex;
   justify-content: space-between;
-  padding: 4rem 7rem 4rem 7rem;
+  padding: 4rem 6rem 4rem 6rem;
+}
+
+.services-left {
+  padding: 0 8rem 0 0;
+  width: 50%;
 }
 
 .heading-2 {
@@ -370,7 +375,7 @@ a {
 }
 
 .section-paragraph {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin: 0 0 1rem 0;
 }
 
@@ -385,12 +390,28 @@ a {
 .services-right {
   align-items: center;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.05rem;
   justify-content: flex-end;
+  width: 50%;
+}
+
+.service-item {
+  text-align: center;
+  width: 33.333%;
 }
 
 .service-item div {
+  align-items: center;
   background: var(--color-beige);
+  border: 0.125rem solid var(--color-black);
+  display: flex;
+  justify-content: center;
+  height: 12.5rem;
+  padding: 0 1rem;
+}
+
+.service-item p {
+  font-size: 1rem;
 }
 
 /******************************************
