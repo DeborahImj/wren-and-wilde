@@ -236,6 +236,34 @@ a {
   }
 }
 
+
+/* HOME SECTION */
+
+.home-section {
+  
+}
+
+.home-top {
+  background-image: url('../assets/images/home-bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 10rem 5rem 15rem;
+}
+
+.home-top h1 {
+  color: var(--color-white);
+  font-family: 'Olivia Nineties', serif;
+  font-size: 4rem;
+}
+
+.home-top h1 span {
+  font-family: 'Buttergone', sans-serif;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
