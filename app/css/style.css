@@ -290,7 +290,7 @@ a {
   width: 52.5%;
 }
 
-.heading-2 {
+.home-heading-2 {
   font-family: 'Olivia Nineties', serif;
   font-size: 2.75rem;
   font-weight: 400;
@@ -298,7 +298,7 @@ a {
   margin: 0 0 1.25rem 0;
 }
 
-.section-paragraph {
+.home-section-paragraph {
   font-size: 1.15rem;
   margin: 0 0 1rem 0;
 }
@@ -313,11 +313,11 @@ a {
   display: inline-block;
   margin: 1.5rem 0 0 0;
   padding: 0.7rem 3.5rem;
+  transition: all 0.4s ease-in-out;
 }
 
 .home-section .section-cta {
   background: var(--color-pink);
-  transition: all 0.4s ease-in-out;
 }
 
 .home-section .section-cta:hover {
@@ -335,15 +335,62 @@ a {
     padding: 2.5rem 1.5rem 2rem 1.5rem;
     width: 100%;
   }
-  .heading-2 {
+  .home-heading-2 {
     font-size: 2.15rem;
   }
-  .section-paragraph {
+  .home-section-paragraph {
     font-size: 1rem;
   }
   .green-span {
     font-size: 0.8rem;
   }
+}
+
+
+/* SERVICES SECTION */
+
+.services-section {
+  align-items: center;
+  background: var(--color-light-green);
+  border-bottom: 0.125rem solid var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 7rem 4rem 7rem;
+}
+
+.heading-2 {
+  font-family: 'Olivia Nineties', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.services-section .heading-2 {
+  color: var(--color-beige);
+}
+
+.section-paragraph {
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.services-section .section-cta {
+  background: var(--color-beige);
+}
+
+.services-section .section-cta:hover {
+  background: var(--color-pink);
+}
+
+.services-right {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.service-item div {
+  background: var(--color-beige);
 }
 
 /******************************************
