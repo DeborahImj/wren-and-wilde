@@ -427,6 +427,12 @@ a {
   font-weight: 400;
 }
 
+.services-rule {
+  background: var(--color-pink);
+  border-bottom: 0.125rem solid var(--color-black);
+  height: 1.3rem;
+}
+
 @media screen and (max-width: 800px) {
   .services-section {
     flex-direction: column;
@@ -468,6 +474,29 @@ a {
   .service-item h3 {
     font-size: 2rem;
   }
+}
+
+
+/* GALLERY SECTION */
+
+.gallery-section {
+  border-bottom: 0.125rem solid var(--color-black);
+  padding: 3rem 6rem 4rem 6rem;
+  text-align: center;
+}
+
+.gallery-row {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+.gallery-row img {
+  height: 17.5rem;
+  width: calc(25% - 0.75rem);
 }
 
 /******************************************
