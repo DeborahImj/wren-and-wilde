@@ -499,6 +499,24 @@ a {
   width: calc(25% - 0.75rem);
 }
 
+@media screen and (max-width: 800px) {
+  .gallery-section {
+    padding: 3.5rem 2.25rem 4rem 2.25rem;
+  }
+  .gallery-section .heading-2 {
+    font-size: 4rem;
+  }
+  .gallery-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+  .gallery-row img {
+    height: 12.5rem;
+    width: calc(50% - 0.25rem);
+  }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
