@@ -721,6 +721,43 @@ a {
   }
 }
 
+
+/* FOOTER */
+
+.footer-banner {
+  background: var(--color-dark-green);
+  border-bottom: 0.125rem solid var(--color-black);
+  height: 1.3rem;
+}
+
+.footer-section {
+  align-items: flex-start;
+  border-bottom: 0.125rem solid var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 3rem 2.25rem 3rem;
+}
+
+.footer-logo {
+  font-size: 3rem;
+}
+
+.footer-details h4, .footer-socials h4 {
+  font-size: 1.25rem;
+  margin: 0 0 1.75rem 0;
+}
+
+.footer-links {
+  align-items: center;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.footer-socials img {
+  width: 1.5rem;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
