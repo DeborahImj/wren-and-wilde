@@ -738,6 +738,10 @@ a {
   padding: 2.25rem 3rem 2.25rem 3rem;
 }
 
+.footer-brand {
+  align-self: flex-start;
+}
+
 .footer-logo {
   font-size: 3rem;
 }
@@ -756,6 +760,27 @@ a {
 
 .footer-socials img {
   width: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-section {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2.25rem;
+    text-align: center;
+  }
+  .footer-brand {
+    align-self: center;
+  }
+  .footer-details h4, .footer-socials h4 {
+    font-size: 1.05rem;
+    margin: 0 0 1rem 0;
+  }
+  .footer-links {
+    gap: 2.25rem;
+  }
 }
 
 /******************************************

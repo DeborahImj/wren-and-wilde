@@ -19,3 +19,12 @@ function scrollToSection() {
   navBurger.classList.toggle('active');
   navMenu.classList.toggle('active');
 }
+
+const mobileCta = document.querySelector('#mobile-nav-cta');
+
+mobileCta.addEventListener('click', closeNavMenu);
+
+function closeNavMenu() {
+  navBurger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+}
